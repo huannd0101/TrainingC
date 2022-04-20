@@ -6,6 +6,7 @@ int main(){
     scanf("%d%d%d%d", &a, &b, &c, &d);
     int firstMax, secondMax; //gan max va max2
     
+    //(a, b)
     if(a > b) {
     	firstMax = a;
     	secondMax = b;
@@ -14,6 +15,7 @@ int main(){
     	secondMax = a;
 	}
 	
+	//(a, b, c)
 	if(firstMax <= c) {
 		if(secondMax < c) {
 			secondMax = firstMax;
@@ -25,6 +27,7 @@ int main(){
 		}
 	}
 	
+	//(a, b, c, d)
 	if(firstMax <= d) {
 		if(secondMax < d) {
 			secondMax = firstMax;
